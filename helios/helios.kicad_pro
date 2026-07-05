@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -132,7 +148,7 @@
         "max_error": 0.005,
         "min_clearance": 0.75,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 1.5,
+        "min_copper_edge_clearance": 0.8,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.75,
         "min_hole_to_hole": 0.75,
@@ -485,7 +501,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "rtlc.kicad_pro",
+    "filename": "helios.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -519,7 +535,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.5,
+        "track_width": 1.25,
         "tuning_profile": "",
         "via_diameter": 2.5,
         "via_drill": 1.0
@@ -668,12 +684,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "rtlc.kicad_sch",
-        "name": "Root",
+        "filename": "helios.kicad_sch",
+        "name": "helios",
         "uuid": "420197ff-90a6-4457-b334-95b83749cbd4"
       }
     ],
-    "used_designators": "H1-4",
+    "used_designators": "H1-10",
     "variants": []
   },
   "sheets": [
