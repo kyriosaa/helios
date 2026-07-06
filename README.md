@@ -1,4 +1,4 @@
-# Real-Time Lamp Controller
+# Helios
 
 WIP
 
