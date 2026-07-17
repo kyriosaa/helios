@@ -24,7 +24,7 @@ const uint8_t PIN_EN_ALARM     = A3;  // 74HC138 enable, ACTIVE LOW
 #define ALARM_ON_MINUTES    60UL  // how long the lamp stays on after the alarm fires
 #define MUX_INTERVAL_US     2000  // per-digit multiplex period (4 digits -> 125 Hz refresh)
 #define BLANK_SETTLE_US     100   // digit-off settle time before lighting (for anti-ghosting)
-#define BLINK_PERIOD_MS     600   // edit-mode blink rate
+#define BLINK_PERIOD_MS     200   // edit-mode blink rate
 #define DEBOUNCE_MS         50    // press must be stable this long to count
 #define EDIT_TIMEOUT_MS     20000 // auto-leave edit mode after this much inactivity
 #define DEBUG_SERIAL        0     // FOR DEBUGGING if u wanna test the button functions on the serial monitor
