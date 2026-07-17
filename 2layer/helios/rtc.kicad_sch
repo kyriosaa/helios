@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "RTC Module")
-		(date "2026-07-01")
-		(rev "1.0")
+		(date "2026-07-17")
+		(rev "1.2")
 		(company "Purit (Kin) Hongjirakul")
 		(comment 1 "Real-Time Lamp Controller")
 		(comment 2 "github")
@@ -231,7 +231,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
+		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -256,7 +256,7 @@
 					)
 				)
 			)
-			(property "Value" "+3V3"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -288,7 +288,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -310,7 +310,7 @@
 					)
 				)
 			)
-			(symbol "+3V3_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -348,7 +348,7 @@
 					)
 				)
 			)
-			(symbol "+3V3_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -595,6 +595,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 142.24 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48d3b795-e451-4ae2-986f-4a427023789a")
+		(property "Reference" "#PWR03"
+			(at 142.24 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 142.24 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 142.24 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "817e8d46-2abd-40f1-8af9-ad498ff93e7a")
+		)
+		(instances
+			(project "helios"
+				(path "/420197ff-90a6-4457-b334-95b83749cbd4/2dc5bb63-d311-49ac-a3d7-5204fbea85f2"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 142.24 101.6 0)
 		(unit 1)
@@ -664,87 +742,9 @@
 			(uuid "14552395-5bf8-46ec-a3ae-2999612a7e4b")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/2dc5bb63-d311-49ac-a3d7-5204fbea85f2"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 142.24 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9e72f62-3904-46d2-b180-dc3f0e3410a3")
-		(property "Reference" "#PWR03"
-			(at 142.24 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 142.24 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 142.24 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "666d0de4-86e5-4301-8755-b91e75eafc24")
-		)
-		(instances
-			(project "rtlc"
-				(path "/420197ff-90a6-4457-b334-95b83749cbd4/2dc5bb63-d311-49ac-a3d7-5204fbea85f2"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -830,7 +830,7 @@
 			(uuid "3f0174ed-90b7-4dfd-84b3-685f453222d6")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/2dc5bb63-d311-49ac-a3d7-5204fbea85f2"
 					(reference "J2")
 					(unit 1)

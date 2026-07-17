@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Inputs")
-		(date "2026-07-01")
-		(rev "1.0")
+		(date "2026-07-17")
+		(rev "1.2")
 		(company "Purit (Kin) Hongjirakul")
 		(comment 1 "Real-Time Lamp Controller")
 		(comment 2 "github")
@@ -878,7 +878,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
+		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -903,7 +903,7 @@
 					)
 				)
 			)
-			(property "Value" "+3V3"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -935,7 +935,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -957,7 +957,7 @@
 					)
 				)
 			)
-			(symbol "+3V3_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -995,7 +995,7 @@
 					)
 				)
 			)
-			(symbol "+3V3_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2168,7 +2168,7 @@
 			(uuid "750448cd-9304-46e2-9bab-e1676b59e657")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "C4")
 					(unit 1)
@@ -2246,7 +2246,7 @@
 			(uuid "cb17d7ea-3f30-401c-afe0-f7ee45ff1f1a")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "#PWR016")
 					(unit 1)
@@ -2334,7 +2334,7 @@
 			(uuid "9b292322-f9a7-43b5-ba70-32e8e3e7e447")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "SW1")
 					(unit 1)
@@ -2415,87 +2415,9 @@
 			(uuid "21711870-1e4c-4ca2-b262-2ef3a5e59c71")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 203.2 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38771a70-ce61-43bd-9695-029fb6bd44ee")
-		(property "Reference" "#PWR015"
-			(at 203.2 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 203.2 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 203.2 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "10b8bf68-327d-4b51-be86-a515fbc03706")
-		)
-		(instances
-			(project "rtlc"
-				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
-					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2571,9 +2493,87 @@
 			(uuid "ad312f6e-43bf-4663-ac3f-72e9fe8334b6")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 105.41 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43579fc3-5a1b-4cc0-bdbf-c47e2eb085df")
+		(property "Reference" "#PWR031"
+			(at 105.41 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 105.41 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 105.41 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89e0f2a5-3ef0-4ffb-af69-2b64623aa1e0")
+		)
+		(instances
+			(project "helios"
+				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -2652,9 +2652,87 @@
 			(uuid "f964cf05-f85e-4932-9077-2318605a6612")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 173.99 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a67b1df-a21b-4945-ac30-6c28a0376e12")
+		(property "Reference" "#PWR013"
+			(at 173.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 173.99 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 173.99 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4967484-1e1d-4f39-b911-9233d14f695b")
+		)
+		(instances
+			(project "helios"
+				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -2733,87 +2811,9 @@
 			(uuid "aa75b118-af1d-4f76-bec2-1606117fc6f6")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 144.78 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66ce0989-b6c3-4314-94c7-01e6cd48ce34")
-		(property "Reference" "#PWR011"
-			(at 144.78 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 144.78 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 144.78 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bead24dc-be1c-4cb4-9361-cff44cb672a3")
-		)
-		(instances
-			(project "rtlc"
-				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -2893,7 +2893,7 @@
 			(uuid "123a7427-b829-4339-b1f6-fa2c4c14e7cd")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "SW4")
 					(unit 1)
@@ -2974,7 +2974,7 @@
 			(uuid "68c2bd43-cbb1-48b3-ab47-052cfe119ac3")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "R5")
 					(unit 1)
@@ -3055,7 +3055,7 @@
 			(uuid "270c2aed-5a97-4691-921f-b5bef462ce75")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "R1")
 					(unit 1)
@@ -3137,7 +3137,7 @@
 			(uuid "e9d97f8f-b6f0-4e48-be37-1cef24e82192")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "SW2")
 					(unit 1)
@@ -3218,9 +3218,165 @@
 			(uuid "43d049e9-fc58-4cb8-b0c9-731c7b9801fd")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 144.78 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b26439a9-e1b8-4c46-bf70-64751548cda2")
+		(property "Reference" "#PWR011"
+			(at 144.78 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 144.78 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 144.78 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ced26a29-671f-4969-a6bd-063671c5b160")
+		)
+		(instances
+			(project "helios"
+				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 203.2 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c27b09da-fd22-4a04-beaa-2db910b17fe5")
+		(property "Reference" "#PWR015"
+			(at 203.2 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 203.2 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 203.2 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cef3be0f-45b3-47f1-9142-ec8b3b6ad8d7")
+		)
+		(instances
+			(project "helios"
+				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -3299,7 +3455,7 @@
 			(uuid "d11e0ecf-93ce-4f0f-b7b0-f580a41a9a7a")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "R2")
 					(unit 1)
@@ -3381,7 +3537,7 @@
 			(uuid "645cad06-3b65-4590-b6c2-8dfe7e2de45c")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "SW3")
 					(unit 1)
@@ -3462,7 +3618,7 @@
 			(uuid "af9dbc43-2ac8-4707-ae3c-7a25cb191432")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "C7")
 					(unit 1)
@@ -3543,7 +3699,7 @@
 			(uuid "f9af9115-aced-4f8e-953d-80cf477ac41d")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "R4")
 					(unit 1)
@@ -3621,87 +3777,9 @@
 			(uuid "1bb25579-47b1-4f6a-837d-474edf5c10c8")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 105.41 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8a65970-4223-4334-8f86-7bdb9b9ace1d")
-		(property "Reference" "#PWR02"
-			(at 105.41 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 105.41 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 105.41 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d1383961-32ff-4522-9843-51ddcebe613d")
-		)
-		(instances
-			(project "rtlc"
-				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3777,87 +3855,9 @@
 			(uuid "f9e37d4b-dc72-4845-9b5b-4ec84d7e945b")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 173.99 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e715f2a7-2b35-40a3-b1bb-2ad90d523b97")
-		(property "Reference" "#PWR013"
-			(at 173.99 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 173.99 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 173.99 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "38090bb3-1a49-4bea-bc7b-97faff39b2ec")
-		)
-		(instances
-			(project "rtlc"
-				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3936,7 +3936,7 @@
 			(uuid "1f8d5ced-997b-40ae-915c-9b415e6149c7")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "C8")
 					(unit 1)
@@ -4017,7 +4017,7 @@
 			(uuid "f82d8410-31d3-4d5c-a275-318c291edb8d")
 		)
 		(instances
-			(project "rtlc"
+			(project "helios"
 				(path "/420197ff-90a6-4457-b334-95b83749cbd4/98236d64-e296-42d9-9e48-9c493c632e21"
 					(reference "C6")
 					(unit 1)
