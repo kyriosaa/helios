@@ -1,4 +1,4 @@
-<!-- <img src="./images/asdf"> -->
+<img src="./images/helios_cover.jpg">
 
 # Helios
 
@@ -91,3 +91,6 @@ Full parts list: [helios_bom.csv](./2layer/documents/helios_bom.csv)
 <img src="./2layer/documents/helios2L_inputs.svg">
 
 ## Images
+
+<img src="./images/helios_cover.jpg">
+<img src="./images/helios_back.jpg">
