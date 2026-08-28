@@ -9,7 +9,9 @@
 
 A real-time lamp controller for my room. Keeps the time (even when unplugged) and flips a relay once the clock and alarm values match. 
 
-My room doesn't have windows (because I'm a broke college student), so I created this device to automatically turn on my bedside lamp in the morning to help me wake up.
+My room doesn't have windows (because I'm a broke college student), so I created this device to automatically turn on my bedside lamp and put myself into fight or flight every morning to help me wake up in time for work/school.
+
+🎥 [Demo Video](https://youtu.be/W-aWS8Oxe-Q?si=ozM3OOpzgYfn5PJq) 🎥
 
 | Sections |
 | -------- |
@@ -23,11 +25,6 @@ My room doesn't have windows (because I'm a broke college student), so I created
 ## Design
 
 Some notes on why the board is built the way it is.
-
-### Arduino Nano on a socket, not a bare ATmega328P
-I wanted the important components to be easily replaceable, so I chose to use the Arduino Nano. It also makes soldering easier for me since I don't need any specialized equipment other than a soldering iron and some lead.
-
----
 
 ### A DS3231 instead of the MCU's own timer
 The RTC has its own coin-cell backup, so the clock survives a power outage or being moved to another room. Keeping time on the MCU would mean re-setting the clock every time the device lost power, which is exactly the kind of small annoyance that would make me stop using it.
