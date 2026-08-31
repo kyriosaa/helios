@@ -9,9 +9,11 @@
 
 A real-time lamp controller for my room. Keeps the time (even when unplugged) and flips a relay once the clock and alarm values match. 
 
-My room doesn't have windows (because I'm a broke college student), so I created this device to automatically turn on my bedside lamp and put myself into fight or flight every morning to help me wake up in time for work/school.
+My room doesn't have windows so I created this device to automatically turn on my bedside lamp and put myself into fight or flight every morning to help me wake up in time for work/school.
 
 🎥 [Demo Video](https://youtu.be/W-aWS8Oxe-Q?si=ozM3OOpzgYfn5PJq) 🎥
+
+<img src="./images/morningpic.gif" width=60%>
 
 | Sections |
 | -------- |
